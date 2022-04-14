@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CRUD - Mongo and Node</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="app.css" />
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Restaurant Menu Items</h1>
+
+        <div id="buttonPanel">
+            <button id="addButton">Add</button>
+            <button id="deleteButton">Delete</button>
+            <button id="updateButton">Update</button>
+        </div>
+
+        <div id="addUpdatePanel">
+            <form>
+                <div>
+                    <div class="formLabel">ID</div>
+                    <input
+                        id="itemIDInput"
+                        type="number"
+                        min="100"
+                        max="999"
+                        required
+                    />
+                </div>
+                <div>
+                    <div class="formLabel">Category</div>
+                    <select id="categorySelect">
+                        <option value="APP">Appetizer</option>
+                        <option value="BEV">Beverage</option>
+                        <option value="DES">Dessert</option>
+                        <option value="ENT">Entree</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="formLabel">Description</div>
+                    <input id="descriptionInput" type="text" required />
+                </div>
+                <div>
+                    <div class="formLabel">Price</div>
+                    <input id="priceInput" type="number" min="1" required />
+                </div>
+                <div>
+                    <div class="formLabel">Vegetarian</div>
+                    <input id="vegetarianInput" type="checkbox" />
+                </div>
+                <div>
+                    <button id="doneButton">Done</button>
+                    <button id="cancelButton">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="theItems"></div>
+    </body>
+</html>

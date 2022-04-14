@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CRUD - Mongo and Node - Tester</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="tester.css" />
+        <script src="tester.js"></script>
+    </head>
+    <body>
+        <h1>Assignment 3 Tester</h1>
+
+        <h2>Requirements:</h2>
+
+        <ol>
+            <li>
+                The MenuItems database must be in its original state. (Run the
+                "rebuild.js" script in Node to achieve this.)
+            </li>
+            <li>
+                The main GET operation - get all items - must be working for the
+                remaining tests to run.
+            </li>
+        </ol>
+
+        <h3>Requirements Check (performed on page load)</h3>
+        
+        <div id="requirementsCheck"></div>
+
+        <h2>Tests</h2>
+
+        <div id="shouldFail">
+            <h3>Errors and Failures</h3>
+            <table>
+                <tr>
+                    <th>Test</th>
+                    <th>Expected Status</th>
+                    <th>Expected Response</th>
+                    <th><button id="testAllErrorsButton">run all</button></th>
+                    <th>Pass?</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="shouldSucceed">
+            <h3>Successful Operations</h3>
+            <p>These can be performed from the front end but are included here for convenience.</p>
+            <table>
+                <tr>
+                    <th>Test</th>
+                    <th>Expected Status</th>
+                    <th>Expected Response</th>
+                    <th></th>
+                    <th>Pass?</th>
+                </tr>
+            </table>
+            <p>*** The End ***</p>
+        </div>
+    </body>
+</html>

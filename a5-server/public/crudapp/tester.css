@@ -1,0 +1,104 @@
+body {
+    color: #333;
+    width: 90%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #ff6600;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: midnightblue;
+    border-bottom: solid thin #cccc99;
+    font-size: 2em;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.4em;
+}
+
+table,
+td,
+th {
+    border: solid thin gray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+th {
+    background-color: lightgray;
+    font-weight: bold;
+    text-align: left;
+}
+
+td,
+pre {
+    font-family: "Consolas", monospace;
+}
+
+td:nth-child(2), th:nth-child(2) {
+    text-align: center;
+}
+
+td:last-child {
+    width: 20%;
+}
+
+button {
+    font-size: 1em;
+    color: #eee;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+button:disabled {
+    background-color: #999;
+}
+
+button:disabled:hover {
+    background-color: #999;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#requirementsCheck {
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 20px 0 50px 0;
+}
+
+.requirementsPassed {
+    background-color: lightgreen;
+}
+
+.requirementsFailed {
+    background-color: lightpink;
+}
+
+.resultPassed {
+    background-color: lightgreen;
+}
+
+.resultFailed {
+    background-color: lightpink;
+}
+
+.resultToBeChecked {
+    background-color: lightyellow;
+}

@@ -1,0 +1,61 @@
+table,
+td,
+th {
+    border: solid thin gray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+#theItems th {
+    background-color: midnightblue;
+    color: white;
+    font-weight: bold;
+}
+
+#theItems td:nth-child(3), #theItems th:nth-child(3) {
+    text-align: left;
+}
+
+#theItems td:not(:nth-child(3)), #theItems th:not(:nth-child(3)) {
+    text-align: center;
+}
+
+#buttonPanel {
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+#buttonPanel button {
+    width: 100px;
+    font-size: 1.1em;
+}
+
+#addUpdatePanel {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.formLabel {
+    width: 100px;
+    float: left;
+}
+
+#descriptionInput {
+    width: 250px;
+}
+
+#theItems tr:hover {
+    background-color: lightgreen;
+}
+
+.highlighted {
+    background-color: yellow;
+}
